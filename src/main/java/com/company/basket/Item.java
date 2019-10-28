@@ -3,7 +3,7 @@ package com.company.basket;
 import java.util.Objects;
 
 public abstract class Item {
-    private double price;
+    private Double price;
     private String name;
 
     Item(){
@@ -42,6 +42,15 @@ public abstract class Item {
         // field comparison
         return Objects.equals(name, item.name)
             && Objects.equals(price, item.price);
+    }
+    
+    @Override
+    public int hashCode(){
+        int prime = 31;
+        int result = 1;
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + ((price == null) ? 0 : price.hashCode());
+        return result;
     }
 
 }

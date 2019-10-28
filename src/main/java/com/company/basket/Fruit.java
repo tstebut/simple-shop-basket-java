@@ -9,5 +9,7 @@ public class Fruit extends Item{
             System.out.println("IllegalArgument will be thrown...this is expected ;)");
             throw e;
         } 
+        super.setName(name);
+        
     }   
 }
