@@ -1,4 +1,4 @@
-** Disclaimer ** 
+**Disclaimer** 
 
 Exercice de codage fait en mode RAD, navré pour l'absence de JavadoC, et la pauvreté des commentaires...
 
