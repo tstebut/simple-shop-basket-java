@@ -9,7 +9,7 @@
 
 ----
 
-**Disclaimer** 
+**Disclaimer** [Go to French version](https://github.com/tstebut/simple-shop-basket-java/blob/master/README.md#french-version)
 
 I really did not have time to finalize this piece properly~~and in particular I skip the Javadoc, which is however an important exercise from my point of view~~. In addition, I started on a simple resolution, helping me with a small project in pure Java done by a student somewhere in the world, and I forked this project. I then corrected and adapted the code so that it is both right and meets the minimum requirement of the exercise, namely a basket with 3 possible fruits, and variable quantity. I then, on day 2, added the functionality of Discount.
 
@@ -43,7 +43,7 @@ $ cd .. && mvn clean install && cd - && java -cp discount-basket-1.0.jar com.com
 ``
 
 ----
-**FRENCH VERSION**
+###FRENCH VERSION
 
 Je n'ai vraiment pas eu le temps de pauffiner cet ouvrage~~, et notamment j'ai fais l'impasse sur la Javadoc, qui est pourtant un exercice important de mon point de vue~~.
 Par ailleurs, je suis parti sur une résolution simple, en m'aidant d'un petit projet en pur Java fait par un étudiant quelque part dans le monde, et j'ai forké ce projet.
