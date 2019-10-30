@@ -7,8 +7,21 @@ import com.company.item.*;
 import com.company.item.Fruit;
 import com.company.basket.*;
 
+/**
+ * 
+ * Classe principale permettant de manipuler 
+ * un Panier de Fruits en lignes de comandes
+ * 
+ * @author jakubstankowski
+ *  Version initiale
+ * @author tstebut
+ *  Version simplifiée puis améliorée pour supporter les erreurs de saisie
+ */
 public class Main {
 
+    /**
+     * Méthode main, qui utilise la classe Scanner pour gérer les interactions de l'utilisateur avec le clavier
+     */
     public static void main(String[] args) {
         Basket<Fruit> basket = new Basket<>();
         Map<Fruit, Discount> discountMap = new HashMap<>();
