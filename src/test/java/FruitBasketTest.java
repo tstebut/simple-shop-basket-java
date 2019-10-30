@@ -6,11 +6,12 @@ import java.util.Map;
 import java.util.HashMap;
 import org.junit.jupiter.api.DisplayName;
 
-
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Simple classe de test du Panier
+ */
 class FruitBasketTest {
-
 
     private final Basket<Fruit> basket = new Basket<>();
 
@@ -27,6 +28,11 @@ class FruitBasketTest {
     void deleteFromBasket() {
         Fruit orange = Fruits.valueOf("Orange".toUpperCase()).getFruit();
         basket.addItemToBasket(orange, 1);
+        basket.deleteFromBasket(orange);
+        assertFalse(basket.isInBasket(orange));
+        basket.addItemToBasket(orange, 2);
+        basket.deleteFromBasket(orange);
+        assertTrue(basket.isInBasket(orange));
         basket.deleteFromBasket(orange);
         assertFalse(basket.isInBasket(orange));
     }
